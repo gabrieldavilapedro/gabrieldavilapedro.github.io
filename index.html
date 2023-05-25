@@ -9,53 +9,85 @@
 <style>
     body{
       background-color:rgb(146, 85, 85) ;
+      padding: 15px;
     }
-    h1{
-      color-scheme:
+    #conteiner{
+      display: flex;
     }
-    
+
+    #conteiner-texto{
+      width: 100%;
+    }
+    img{
+      border-radius: 60px
+    }
+    .links{
+      text-decoration: none;
+    }
     .fonte{
       font-family: 'Courier New', Courier, monospace;
       color: #000000;
+      
     }
     h2 {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-size: 30px;
       font-weight: 600;
     }
+    #linkadin{
+      background-color: rgb(59, 92, 199);
+      padding: 2px;
+      text-decoration: none;
+      color: rgb(154, 179, 201);
+      border-radius: 6px
+    }
+    #legendafoto{
+      font-size: 15px;
+      text-align: center;
+
+    }
     
     </style>
   </head>
     
   <body>
+    <div id="conteiner">
+    <div id="conteiner-texto">
+      
+      <h1 id="nome"> Gabriel D'avila Pedro</h1>
+      
+      
+      <ul class="fonte">
+        <li><a class="links" href="#sobre-mim">Sobre mim</a></li>
+        <li><a class="links" href="#competencias">Minhas competências</a></li>
+        <li><a class="links" href="#hobbis">Hobbies</a></li>
+      </ul>
 
-    <h1 id="nome"> Gabriel D'avila Pedro</h1>
-    <img id="foto"src="Captura de tela de 2023-05-24 19-22-43.png" alt="foto do gabriel" width="350px" >
-    <p id="legendafoto">Foto da minha formatura de ensino medio<p>
-    
-    <ul class="fonte">
-      <li><a href="#sobre-mim">Sobre mim</a></li>
-      <li><a href="#competencias">Minhas competencias</a></li>
-      <li><a href="#hobbis">Hobbies</a></li>
-    </ul>
+      <h2 id="sobre-mim">Sobre mim</h2>
 
-    <h2 id="sobre-mim">Sobre mim</h2>
+      <p class="fonte">Sou o <strong>Gabriel</strong> tenho 19 anos, Brasileiro residente no estado de Santa Catarina <br> <em> estou cursando o curso de Formação em <strong>  Full-Stack desenvolvido pela Trybe.</strong></em> </h3>
+      
+        <a id="linkadin" target ="blank" href="https://www.linkedin.com/in/gabriel-d-avila-a3a606272/">linkedin</a>
+      
+        <h2 id="competencias">Competencias</h2>
+      <ol class="fonte">
+          <li>Tecnico em eletromecanica;</li>
+          <li>Comunicativo;</li> 
+          <li>Prestativo;</li>
+          <li>Dedicado.</li>
 
-    <p class="fonte">Sou o <strong>Gabriel</strong> tenho 19 anos, Brasileiro residente no estado de Santa Catarina <br> <em> estou cursando o curso de Formação em <strong>  Full-Stack desenvolvido pela Trybe.</strong></em> </h3>
+      </ol>
 
-    <h2 id="competencias">Competencias</h2>
-    <ol class="fonte">
-        <li>Técnico em Eletrotécnica;</li>
-        <li>Comunicativo</li> 
-        <li>Prestativo</li>
-        <li>Dedicado</li>
-
-    </ol>
-
-    <h2 id="hobbis">Hobbies</h2>
-    
-      <p class="fonte">Gosto de gastar meu <em>tempo livre<em> praticando esportes como <em>volei e futebol</em>,<br> Jogar<em> jogos eletronicos</em>,<em> e sair para conversar e <strong>beber umas!</strong></em></p>
-    
-    <a href="https://www.youtube.com/@Gaules/featured" target="_blanc">Faça parde da tribo</a>
-  </body>
+      <h2 id="hobbis">Hobbies</h2>
+      
+        <p class="fonte">Gosto de gastar meu <em>tempo livre</p></em> praticando esportes como <em>volei e futebol</em>,<br> Jogar<em> jogos eletronicos</em>,<em> e sair para conversar e <strong>beber umas!</strong></em></p>
+      
+      <a class="links" href="https://www.youtube.com/@Gaules/featured" target="_blanc">Faça parde da tribo.</a>
+    </div>
+    <div>
+      <img id="foto"src="Captura de tela de 2023-05-24 19-22-43.png" alt="foto do gabriel" width="350px">
+      <p id="legendafoto">Foto: formatura de ensino medio<p>
+    </div>
+  </div>
+</body>
 </html>
